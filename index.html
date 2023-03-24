@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Primera Pagina HTML CSS</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Ubuntu|">
+</head>
+<body> 
+    <header>
+        <h1>Pagina demo HTML + CSS</h1>
+    </header>
+    <nav>
+        <a href="" class="navlink">Inicio</a> 
+        <a href="" class="navlink">Foro</a> 
+        <a href="" class="navlink">Novedades</a> 
+        <a href="" class="navlink">Login</a>
+      </nav>
+    <section>
+        <h2>Introducción</h2>
+        <p>En esta pagina se mostraran cosas random sin vinculos entre si para demostrar
+            usos de diferentes componentes HTML y CSS
+        </p>
+        <details>
+            <summary>No será como la pagina de Homero,</summary>
+            <p>Pero se acercará bastante</p>
+            <img src="https://media.tenor.com/C-qhIiM38ooAAAAC/simpsons-homer.gif" alt="GIF Pagina de Homero">
+        </details>
+        
+    </section>
+    <section>
+        <h2>Trabalenguas</h2>
+        <p>Los trabalenguas son oraciones o textos breves creados para que su pronunciación 
+            en voz alta sea difícil de decir. Con frecuencia son utilizados o bien como un 
+            género jocoso de la literatura oral o bien como ejercicio para desarrollar una 
+            dicción ágil y rápida <a href="https://es.wikipedia.org/wiki/Trabalenguas">(Wiki).</a> 
+            <br> El trabalenguas mas conocido en español es:</p>
+        <p>Tres tristres tigres comen trigo en un trigal</p>
+        <img src="https://ogdenprep.org/wp-content/uploads/2020/04/9681293c31b1cd0b01115399e4c677b8-2.jpg" alt="imagen de trabalenguas de tres tigres">
+        <p>Otros trabalenguas populares son:</p>
+        <div class="centerlist">
+            <ul>
+                <li>El de Pablito y el clavito</li>
+                <li> El de Maria Chuchena y el techo</li>
+            </ul>
+        </div>
+        
+        <iframe width="420" height="315"src="https://www.youtube.com/embed/pMsgzdqIW70">
+        </iframe>
+    </section>
+    <section>
+        <h2>Registro de datos</h2>
+        <h3>Ingrese sus datos para generar una cuenta</h3>
+        <form action="" method="get">
+            
+            <fieldset>
+                <label for="Nombre">Nombre <input type="text" name="inname" id="Nombre" placeholder="Juan Perez" required></label>
+                <label for="Usuario">Usuario <input type="text" name="inusuario" id="Usuario" placeholder="Usuario" required></label>
+                <label for="email">Email <input type="email" name="inemail" id="email" placeholder="JuanPerez@email.com" required></label>
+                <label for="password">Contraseña <input type="password" pattern="^(?=.*[a-z])(?=.*[A-Z])(?=.*[0-9])(?=.*[!@#$%^&*_=+-]).{8,16}" name="inpassword" id="password" placeholder="Contraseña" required></label>
+            </fieldset>
+            <fieldset>
+                <legend>Conocimiento de lenguajes</legend>
+                <label for="chk1"><input type="checkbox" id="chk1" value="Java" class="inline"> Java </label>
+                <label for="chk1"><input type="checkbox" id="chk1" value="C#" class="inline"> C#</label>
+                <label for="chk1"><input type="checkbox" id="chk1" value="Phyton" class="inline"> Phyton</label>
+                <label for="chk1"><input type="checkbox" id="chk1" value="Otros" class="inline"> Otros</label>
+            </fieldset>
+            <fieldset>
+                <legend>Experiencia laboral como programador</legend>
+                <label for="expSi"><input type="radio" name="inexperiencia" id="expSi" required class="inline"> Si</label>
+                <label for="expNo"><input type="radio" name="inexperiencia" id="expNo" class="inline"> No</label>
+            </fieldset>
+            <fieldset>
+                <legend>Genero</legend>
+                <select name="ingenero" id="genero" required>
+                    <option value="">(Seleccione)</option>
+                    <option value="M">M</option>
+                    <option value="F">F</option>
+                    <option value="X">X</option>
+                    <option value="NC">Prefiero no declarar</option>
+                </select>
+            </fieldset>
+            <input type="reset" value="Borrar Formulario">
+            <input type="submit" value="Enviar">
+        </form>
+
+    </section>
+
+
+</body>
+<footer>
+    <div class="footer1">Copyright 2023</div>
+    <div class="footer1">
+        <a href="https://github.com/scorpius-t/" target="_blank" rel="noopener noreferrer"><img src="./img/square-github.svg" alt="icono github" class="icono"></a>
+    </div>
+    
+</footer>
+
+</html>
